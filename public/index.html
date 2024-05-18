@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Content Idea Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-section">
+      <div class="content-idea-generator">
+        <h2>Free Content Idea Generator</h2>
+        <form id="content-idea-form" aria-labelledby="content-idea-heading">
+          <fieldset>
+            <legend id="content-idea-heading">Enter Your Details</legend>
+            <div class="form-group">
+              <label for="topic">Topic:</label>
+              <input type="text" id="topic" name="topic" required aria-required="true" placeholder="Enter your topic">
+            </div>
+            <div class="form-group">
+              <label for="audience">Target Audience:</label>
+              <input type="text" id="audience" name="audience" required aria-required="true" placeholder="Enter your audience">
+            </div>
+            <div class="form-group">
+              <label for="platform">Platform:</label>
+              <select id="platform" name="platform" required aria-required="true">
+                <option value="blog">Blog</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">YouTube</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="keywords">Keywords:</label>
+              <input type="text" id="keywords" name="keywords" required aria-required="true" placeholder="Enter keywords">
+            </div>
+            <div class="form-group">
+              <label for="objective">Objective:</label>
+              <select id="objective" name="objective" required aria-required="true">
+                <option value="brand-awareness">Brand Awareness</option>
+                <option value="lead-generation">Lead Generation</option>
+                <option value="engagement">Engagement</option>
+                <option value="traffic">Traffic Generation</option>
+                <option value="sales">Sales Conversion</option>
+                <option value="customer-education">Customer Education</option>
+              </select>
+            </div>
+            <button type="submit">Generate Ideas</button>
+          </fieldset>
+        </form>
+        <div id="loader" class="loader" style="display:none;">
+          <div class="bounce"></div>
+          <div class="bounce"></div>
+          <div class="bounce"></div>
+        </div>
+      </div>
+    </div>
+    <div class="output-section">
+      <div id="result-container"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

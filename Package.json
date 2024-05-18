@@ -1,0 +1,19 @@
+{
+  "name": "content-idea-generator",
+  "version": "1.0.0",
+  "description": "A web tool for generating content ideas",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Brian Kianvusha",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  }
+}
